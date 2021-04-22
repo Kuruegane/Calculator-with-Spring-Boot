@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            Calculadora SpringBoot
+        </title>
+        <meta charset="UTF-8">
+    </head>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    
+        <body style="background-color: gainsboro;">
+            <div style="text-align: center;">
+                <h1 style="color: #000; padding-top: 20px;">
+                    Calculadora com SpringBoot
+                </h1>
+                <h3 style="color: #000;">
+                    Selecione uma Ação :
+                </h3>
+                <form method="POST" action="/calculadora/resultado"><br>
+                    <label for="number1">Digite o primeiro número:</label>
+                    <input type="number1" id="number1" name="number1" required /><br /><br />
+            
+                    <label for="numero2">Digite o segundo número:</label>
+                    <input type="number2" id="number2" name="number2" required /><br /><br />
+            
+                    <label for="option">Selecione qual operação você deseja efetuar:</label><br /><br />
+                    <input type="radio" id="somar" name="option" value="somar" checked>
+                    <label for="somar">Somar</label>
+                    <input type="radio" id="subtrair" name="option" value="subtrair">
+                    <label for="subtrair">Subtrair</label>
+                    <input type="radio" id="multiplicar" name="option" value="multiplicar">
+                    <label for="multiplicar">Multiplicar</label>
+                    <input type="radio" id="divide" name="option" value="divide">
+                    <label for="divide">Dividir</label><br /><br />
+            
+                    <button class="btn btn-info" type="submit" value="Enviar" >Enviar</button> 
+                </form>
+            </div>
+            <h2></h2>
+    </body>
+</html>
